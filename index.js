@@ -186,7 +186,7 @@ ImageMagick.prototype = {
         : ('-' + key);
       that.args.push(argName);
       var argValue = options[key];
-      if (argValue !== undefined) {
+      if (argValue !== null && argValue !== undefined) {
         that.args.push(argValue);
       }
     });
